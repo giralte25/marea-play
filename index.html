@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Marea</title>
+  <meta name="description" content="Marea: roguelite de puertos. Levanta un puerto en una isla nueva, consigue la Carta antes del temporal y vuelve con legado." />
+  <meta name="theme-color" content="#1b2a4a" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta property="og:title" content="Marea" />
+  <meta property="og:description" content="Roguelite de puertos: islas nuevas, planos a elegir, temporal que se acerca y legado para siempre." />
+  <meta property="og:image" content="./og.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fraunces:ital,wght@1,600&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #1b2a4a; }
+    canvas { display: block; }
+    #boot { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; color: #cfe6f0; font: 600 15px 'Nunito', system-ui, sans-serif; background: radial-gradient(circle at 50% 40%, #27456f, #1b2a4a 70%); }
+    #boot b { font: italic 600 44px 'Fraunces', Georgia, serif; color: #7fd3dc; letter-spacing: 0.5px; }
+    #boot .w { width: 180px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.12); overflow: hidden; }
+    #boot .w i { display: block; height: 100%; width: 40%; background: #7fd3dc; animation: boot 1.1s ease-in-out infinite; }
+    @keyframes boot { 0% { transform: translateX(-100%); } 100% { transform: translateX(450%); } }
+  </style>
+  <script type="module" crossorigin src="./assets/index-B8EK4mwn.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DS4sNThz.css">
+</head>
+<body>
+  <div id="boot"><b>Marea</b><span>Levantando la isla…</span><div class="w"><i></i></div></div>
+  <div id="hud"></div>
+</body>
+</html>

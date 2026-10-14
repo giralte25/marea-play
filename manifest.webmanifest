@@ -1,0 +1,16 @@
+{
+  "name": "Marea",
+  "short_name": "Marea",
+  "description": "Roguelite de puertos: islas nuevas, planos a elegir, temporal que se acerca y legado para siempre.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#1b2a4a",
+  "theme_color": "#1b2a4a",
+  "lang": "es",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
